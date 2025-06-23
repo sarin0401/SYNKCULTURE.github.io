@@ -226,7 +226,8 @@ header .icon img {
 }
 /*h2タグにclass="title"をつけたタイプ。大見出し。*/
 #main h2.title {
-	font-family: 'Poiret One';	/*冒頭のgoogle fontsの指定*/
+	font-family: 'Brownstd, sans-serif';	/*冒頭のgoogle fontsの指定*/
+	font-weight: 700;
 	font-size: 60px;			/*文字サイズ*/
 	margin-bottom: 40px;		/*見出しの下に空けるスペース*/
 	border-bottom: 1px solid #2e8b57;	/*下線の幅、線種、色*/
@@ -772,7 +773,7 @@ ol {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover; /* ← 動画の見せ方を調整 */
+  object-fit: cover;/* ← 動画の見せ方を調整 */
 }
 
 .modal {
@@ -823,4 +824,22 @@ footer {
 footer a {
   color: #2e8b57;
   text-decoration: none; 
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2e8b57;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button:hover {
+  background-color: #276f49; /* 少し濃く */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
